@@ -1,0 +1,130 @@
+body {
+    background-color: rgb(34, 34, 34);
+    color: white;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    /* blocos organizados em linha */
+    justify-content: space-between;
+    /* espaço entre os blocos da linha */
+    align-items: center;
+}
+
+.title {
+    flex-direction: column;
+    /* faz os dois h1's ficarem um embaixo do outro */
+    line-height: 10px;
+}
+
+ul {
+    list-style: none;
+    /* tira os marcadores dos itens */
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    /* tira a configuração "padrão" de link, eliminando o sublinhado embaixo */
+    font-size: 1em;
+    /* tamanho de acordo com o elemento-pai - no caso, 1em = 16px */
+}
+
+a:hover {
+    color: rgb(132, 14, 201);
+    transition: 0.3s all;
+    /* transição após o usuário passar o mouse; transição aplicada a todos os links */
+}
+
+.contato {
+    border: 2px solid rgb(132, 14, 201);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.contato:hover {
+    background-color: rgb(132, 14, 201);
+    color: white;
+}
+
+li {
+    display: inline-block;
+    /* margin: 20px; */
+    margin: 15px 20px 15px 20px;
+}
+
+h1 {
+    font-weight: 300;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    /* organiza os elementos do main em linha */
+    /* margin-top: 70px; */
+    margin-top: 12px;
+}
+
+h2 {
+    font-size: 1.8em;
+    /* line-height: 0.8em; */
+    line-height: 0.5em;
+}
+
+span {
+    color: rgb(132, 14, 201);
+}
+
+p {
+    /* line-height: 1em; */
+    line-height: 1.2em;
+    max-width: 400px;
+    text-align: justify;
+}
+
+img {
+    width: 100%;
+    /* a imagem vai poder usar o tamanho máximo do article em que está */
+    max-width: 600px;
+    /* margin-left: 150px; */
+    margin-left: 220px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+form [type="submit"] {
+    height: 50px;
+    width: 50%;
+    background-color: rgb(132, 14, 201);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+form [type="submit"]:hover {
+    opacity: .5;
+}
+
+input {
+    /* margin-top: 20px; */
+    margin-top: 12px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 15px;
+}
+
+input:focus {
+    outline: none;
+}
